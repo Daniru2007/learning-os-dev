@@ -49,6 +49,7 @@ StartProtectedMode:
 
     call DetectCPUID
     call DetectLongMode
+    call SetUpIdentityPaging
 
     jmp $
 
