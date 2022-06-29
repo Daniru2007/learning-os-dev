@@ -12,8 +12,8 @@ DetectCPUID:
     pushfd
     pop eax
 
-    popfd
     push ecx
+    popfd
 
     xor ecx, eax
 
