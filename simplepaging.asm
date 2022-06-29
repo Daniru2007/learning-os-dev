@@ -32,4 +32,8 @@ SetUpIdentityPaging:
     or eax, 1 << 8
     wrmsr
 
+    mov eax, cr0
+    or eax, 1 << 31
+    mov cr0, eax
+
     ret
